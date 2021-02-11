@@ -57,7 +57,7 @@ ifeq ($(ARCH),aarch64)
 	PKG_ARCH_BAIDUPCS-WEB:=arm64
 endif
 
-PKG_SOURCE:=BaiduPCS-Go-$(PKG_VERSION)-linux-$(PKG_ARCH_BAIDUPCS-WEB).zip
+PKG_SOURCE:=BaiduPCS-Go-$(PKG_VERSION)-linux-armv7.zip
 
 PKG_SOURCE_URL:=https://github.com/coolsnowwolf/baidupcs-web/raw/master/
 
