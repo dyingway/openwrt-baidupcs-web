@@ -18,7 +18,7 @@ define Package/$(PKG_NAME)
 	SECTION:=net
 	CATEGORY:=Network
 	TITLE:=BaiduPCS-Web is a web controller for BaiduPCS-Go
-	URL:=https://github.com/coolsnowwolf/baidupcs-web
+	URL:=/home/openwrt-sdk/package/baidupcs-web
 endef
 
 
@@ -59,7 +59,7 @@ endif
 
 PKG_SOURCE:=BaiduPCS-Go-$(PKG_VERSION)-linux-armv7.zip
 
-PKG_SOURCE_URL:=https://github.com/coolsnowwolf/baidupcs-web/raw/master/
+PKG_SOURCE_URL:=/home/openwrt-sdk/package/baidupcs-web
 
 UNZIP_DIR:=$(BUILD_DIR)/$(PKG_NAME)-$(PKG_VERSION)/$(PKG_NAME)-unzip
 
