@@ -9,7 +9,7 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=baidupcs-web
-PKG_VERSION:=3.7.0
+PKG_VERSION:=3.7.1
 PKG_RELEASE:=1
 
 include $(INCLUDE_DIR)/package.mk
@@ -18,7 +18,7 @@ define Package/$(PKG_NAME)
 	SECTION:=net
 	CATEGORY:=Network
 	TITLE:=BaiduPCS-Web is a web controller for BaiduPCS-Go
-	URL:=https://github.com/liuzhuoling2011/baidupcs-web
+	URL:=https://github.com/coolsnowwolf/baidupcs-web
 endef
 
 
@@ -45,7 +45,7 @@ ifeq ($(ARCH),mips)
 	PKG_ARCH_BAIDUPCS-WEB:=mipsle
 endif
 
-ifeq ($(ARCH),arm)
+ifeq ($(ARCH),armv7)
 	PKG_ARCH_BAIDUPCS-WEB:=arm
 endif
 
@@ -57,10 +57,12 @@ ifeq ($(ARCH),aarch64)
 	PKG_ARCH_BAIDUPCS-WEB:=arm64
 endif
 
+https://github.com/coolsnowwolf/baidupcs-web/blob/master/BaiduPCS-Go-v3.7.1-linux-armv7.zip
+https://github.com/coolsnowwolf/baidupcs-web/raw/master/BaiduPCS-Go-v3.7.1-linux-armv7.zip
 
 PKG_SOURCE:=BaiduPCS-Go-$(PKG_VERSION)-linux-$(PKG_ARCH_BAIDUPCS-WEB).zip
 
-PKG_SOURCE_URL:=https://github.com/liuzhuoling2011/baidupcs-web/releases/download/$(PKG_VERSION)/
+PKG_SOURCE_URL:=https://github.com/coolsnowwolf/baidupcs-web/raw/master/$(PKG_VERSION)/
 
 UNZIP_DIR:=$(BUILD_DIR)/$(PKG_NAME)-$(PKG_VERSION)/$(PKG_NAME)-unzip
 
